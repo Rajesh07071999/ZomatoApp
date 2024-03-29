@@ -1,0 +1,63 @@
+.header {
+  height: 44vw;
+  margin: 30px auto;
+  background: url("https://wallpaper.dog/large/20491977.jpg") no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 100%;
+}
+
+.header-containts {
+  position: absolute;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 3s;
+  /* justify-content: space-between;    */
+}
+
+.header-containts h1 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+}
+
+.header-containts p {
+  color: white;
+  font-size: 1vw;
+}
+
+.header-containts button {
+  background: transparent;
+  border: 1px sold tomato;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1 px solid white;
+}
+@media (max-width: 1050px) {
+  
+  .header-containts {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-containts {
+    max-width: 55%;
+  }
+  .header-containts p {
+    display:none
+  }
+
+  .header-containts button{
+    padding: 2vw 4vw;
+  }
+}

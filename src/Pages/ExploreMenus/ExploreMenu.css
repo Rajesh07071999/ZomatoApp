@@ -1,0 +1,22 @@
+.explore-menu .explore-menu-lists {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0px;
+  text-align: center;
+  align-items: center;
+  overflow-x: scroll;
+}
+.explore-menu h2 {
+  font-weight: 500;
+}
+
+.explore-menu-lists::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-menu-lists .Active{
+    border : 1px solid tomato;
+    padding: 1px;
+    border-radius: 2px;
+}
